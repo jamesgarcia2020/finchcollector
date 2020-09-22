@@ -37,7 +37,7 @@ def assoc_toy(request, finch_id, toy_id):
   
 class FinchCreate(CreateView):
     model = Finch
-    fields = '__all__'
+    fields = ['name', 'breed', 'description', 'age']
 
 class FinchUpdate(UpdateView):
     model = Finch
